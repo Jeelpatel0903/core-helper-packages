@@ -1,0 +1,22 @@
+{
+  "name": "core-helper-packages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeelpatel0903/core-helper.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "jeel patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeelpatel0903/core-helper/issues"
+  },
+  "homepage": "https://github.com/Jeelpatel0903/core-helper#readme"
+}
