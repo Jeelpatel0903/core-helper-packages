@@ -1,22 +1,19 @@
 {
   "name": "core-helper-packages",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is am core helper packages for string array etc..",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jeelpatel0903/core-helper-packages.git"
   },
-  "keywords": [
-    "npm"
-  ],
   "author": "jeel patel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Jeelpatel0903/core-helper/issues"
+    "url": "https://github.com/Jeelpatel0903/core-helper-packages/issues"
   },
-  "homepage": "https://github.com/Jeelpatel0903/core-helper#readme"
+  "homepage": "https://github.com/Jeelpatel0903/core-helper-packages#readme"
 }
