@@ -250,6 +250,34 @@ function uniqueArray(arr) {
     return [...new Set(arr)];
 }
 
+function beforeArray(array, index) {
+    return array.slice(0, index);
+}
+
+function afterArray(array, index) {
+    if (index < 0 || index >= array.length - 1) {
+        return [];
+    }
+    return array.slice(index + 1);
+}
+
+
+function compactArray(array) {
+    if(!isArray(array)) {
+        throw new TypeError('Expected an array');
+    }
+    return array.filter(x => x !== null && x !== undefined && x !== 0 && x !== false && x !== '' && !Number.isNaN(x));
+}
+
+
+function differenceArray(array1, array2) {
+    if(!isArray(array1) || !isArray(array2)) {
+        throw new TypeError('Expected an array');
+    }
+    return array1.filter(item => !array2.includes(item));
+}
+
+
 module.exports = {
     isString,
     isArray,
@@ -270,4 +298,8 @@ module.exports = {
     filterArray,
     flatArray,
     uniqueArray,
+    beforeArray,
+    afterArray,
+    compactArray,
+    differenceArray
 };
