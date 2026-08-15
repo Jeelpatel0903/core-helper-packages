@@ -1,19 +1,52 @@
 {
   "name": "core-helper-packages",
-  "version": "1.3.0",
-  "description": "core-helper-packages is a utility library designed to simplify common programming tasks in JavaScript. It includes a comprehensive set of functions for working with arrays and strings, making your development process faster and more efficient",
+  "version": "2.0.0",
+  "description": "A comprehensive all-in-one JavaScript utility library with 500+ functions covering arrays, strings, numbers, objects, dates, validation, colors, async/promise utilities, DOM helpers, and more. Works in Node.js, browsers, Angular, React, Vue, and TypeScript.",
   "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": "./index.js",
+    "./array": "./src/array.js",
+    "./string": "./src/string.js",
+    "./number": "./src/number.js",
+    "./object": "./src/object.js",
+    "./date": "./src/date.js",
+    "./validation": "./src/validation.js",
+    "./function": "./src/function.js",
+    "./color": "./src/color.js",
+    "./async": "./src/async.js",
+    "./dom": "./src/dom.js",
+    "./type": "./src/type.js"
+  },
   "scripts": {
-    "test": "npm start"
+    "test": "node -e \"const h = require('.'); console.log('✅ Total exports:', Object.keys(h).filter(k => typeof h[k] === 'function' || (typeof h[k] === 'object' && h[k] !== null)).length);\"",
+    "count": "node -e \"const h = require('.'); const fns = Object.keys(h).filter(k => typeof h[k] === 'function'); console.log('Functions:', fns.length);\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jeelpatel0903/core-helper-packages.git"
   },
-  "author": "jeel patel",
+  "keywords": [
+    "utility", "utils", "helper", "lodash", "underscore", "ramda",
+    "array", "string", "number", "object", "date", "datetime",
+    "validation", "validator", "color", "async", "promise",
+    "dom", "browser", "typescript", "angular", "react", "vue",
+    "debounce", "throttle", "memoize", "curry", "compose",
+    "deepclone", "deepmerge", "groupby", "flatten", "chunk",
+    "format", "formatdate", "formatnumber", "formatcurrency",
+    "email", "phone", "url", "uuid", "pan", "aadhaar", "gstin",
+    "base64", "hex", "rgb", "hsl", "colorpalette",
+    "fibonacci", "prime", "factorial", "gcd", "lcm",
+    "levenshtein", "jarowinkler", "slugify", "camelcase",
+    "javascript", "js", "nodejs", "npm", "package", "zero-dependency"
+  ],
+  "author": "Jeel Patel",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jeelpatel0903/core-helper-packages/issues"
   },
-  "homepage": "https://github.com/Jeelpatel0903/core-helper-packages#readme"
+  "homepage": "https://github.com/Jeelpatel0903/core-helper-packages#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
